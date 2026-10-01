@@ -1,0 +1,31 @@
+{
+  "name": "better-software-engineer-ai-slides",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export",
+    "export:clicks": "slidev export --with-clicks",
+    "deploy": "slidev build --base /better-software-engineer-ai/ && gh-pages --no-history --dotfiles -d dist -b gh-pages -r https://github.com/gaborbernat/better-software-engineer-ai.git -m 'Deploy slides'"
+  },
+  "dependencies": {
+    "@iconify-json/carbon": "^1.2.27",
+    "@iconify-json/circle-flags": "^1.2.11",
+    "@iconify-json/fluent-mdl2": "^1.2.1",
+    "@iconify-json/logos": "^1.2.14",
+    "@iconify-json/mdi": "^1.2.3",
+    "@slidev/cli": "^53.0.0",
+    "@slidev/theme-default": "^0.25.0",
+    "qr-code-styling": "^1.9.2",
+    "vue": "^3.5.43"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "playwright-chromium": "^1.63.0",
+    "vite": "^8.3.0"
+  }
+}

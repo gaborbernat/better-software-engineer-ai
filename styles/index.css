@@ -1,0 +1,17 @@
+/* Enable word wrapping in code blocks */
+.slidev-code code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* The theme's dashed link border collides with the superscript of the next reference line */
+.refs-bar a {
+  border-bottom: none;
+  text-decoration: underline dotted;
+  text-underline-offset: 1px;
+}
+
+/* The theme dims the lead line under a title to 50%, which fails WCAG contrast on the light background */
+.slidev-layout h1 + p {
+  opacity: 0.7;
+}
